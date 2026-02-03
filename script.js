@@ -12,6 +12,7 @@ const passwordErrorElement = document.querySelector('.password-error');
 const confirmPasswordErrorElement = document.querySelector('.confirm-password-error');
 const checkboxErrorElement = document.querySelector('.js-checkbox-error');
 
+const formElement = document.querySelector('.js-register-form');
 const registerButtonElement = document.querySelector('.js-register-now-button');
 
 registerButtonElement.addEventListener('click', () => {
@@ -45,5 +46,13 @@ registerButtonElement.addEventListener('click', () => {
     }
     if (checkboxElement.checked) {
         checkboxErrorElement.classList.add('hidden');
+    }
+
+    if (checkboxElement.checked && nameInputElement.value &&
+        emailInputElement.value && passwordInputElement.value &&
+        confirmPasswordElement.value
+    ) {
+        formElement.innerHTML = `<div class="thank-you-message">
+        <h1>Welcome! 🎉</h1></div>`;
     }
 })

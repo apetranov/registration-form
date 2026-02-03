@@ -81,6 +81,12 @@ a:hover {
     font-size: 14px;
 }
 
+.thank-you-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 400px) {
     .register-form {
         width: 70%;
