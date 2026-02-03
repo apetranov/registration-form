@@ -12,15 +12,35 @@
 <body>
     <div class="register-form">
         <h1>Registration</h1>
-        <input class="text-input" placeholder="Enter your name">
-        <input class="text-input" placeholder="Enter your email">
-        <input class="text-input" type="password" placeholder="Create password">
-        <input class="text-input" type="password" placeholder="Confirm password">
+
+        <p class="name-error hidden error">
+            Name required*
+        </p>
+        <input class="text-input js-name" placeholder="Enter your name">
+
+        <p class="email-error hidden error">
+            Email required*
+        </p>
+        <input class="text-input js-email" placeholder="Enter your email">
+
+        <p class="password-error hidden error">
+            Password required*
+        </p>
+        <input class="text-input js-password" type="password" placeholder="Create password">
+
+        <p class="confirm-password-error hidden error">
+            Passwords must match*
+        </p>
+        <input class="text-input js-confirm-password" type="password" placeholder="Confirm password">
+        
+        <p class="error hidden js-checkbox-error">
+            Must accept terms & conditions*
+        </p>
         <div class="checkbox-div">
-            <input type="checkbox">
+            <input class="js-checkbox" type="checkbox">
             <p>I accept all terms & conditions</p>
         </div>
-        <button class="register-now-button">Register Now</button>
+        <button class="register-now-button js-register-now-button">Register Now</button>
         <div class="have-account-div">
             <p>Already have an account? <a href="#">Login now</a></p>
         </div>

@@ -72,6 +72,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.hidden {
+    display: none;
+}
+
+.error {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+}
+
 @media (max-width: 400px) {
     .register-form {
         width: 70%;
